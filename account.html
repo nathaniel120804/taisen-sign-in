@@ -1,0 +1,46 @@
+<!-- account.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Taisen Search — Account</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header-section">
+    <h1 class="site-title">Account Manager</h1>
+  </header>
+
+  <main class="center-box">
+    <div class="auth-card">
+      <h2>Account</h2>
+
+      <p><strong>Name:</strong> <span id="accountName">—</span></p>
+      <p><strong>Email:</strong> <span id="accountEmail">—</span></p>
+      <p><strong>UID:</strong> <span id="accountUid">—</span></p>
+
+      <div style="margin-top:12px;">
+        <button id="logoutBtn">Log out</button>
+      </div>
+
+      <div style="margin-top:10px;">
+        <button id="deleteBtn" class="danger-btn">Delete my account</button>
+      </div>
+
+      <p id="accountMsg" class="error-msg" aria-live="polite" style="margin-top:10px"></p>
+
+      <div class="profile-actions" style="margin-top:12px;">
+        <a class="auth-links" href="profile.html">Edit profile</a>
+        <a class="auth-links" href="search.html">Back to Search</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-section">
+    <p>&copy; 2025 Taisen Search</p>
+  </footer>
+
+  <script type="module" src="account.js"></script>
+</body>
+</html>

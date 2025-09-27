@@ -24,7 +24,7 @@ loginForm.addEventListener("submit", async (e) => {
 
   try {
     await signInWithEmailAndPassword(auth, email, password);
-    window.location.href = "search.html";
+    window.location.href = "https://taisen.pages.dev";
   } catch (error) {
     errorMsg.textContent = error.message;
   }
@@ -35,7 +35,7 @@ googleBtn.addEventListener("click", async () => {
   const provider = new GoogleAuthProvider();
   try {
     await signInWithPopup(auth, provider);
-    window.location.href = "search.html";
+    window.location.href = "https://taisen.pages.dev";
   } catch (error) {
     errorMsg.textContent = error.message;
   }
@@ -45,7 +45,7 @@ googleBtn.addEventListener("click", async () => {
 guestBtn.addEventListener("click", async () => {
   try {
     await signInAnonymously(auth);
-    window.location.href = "search.html";
+    window.location.href = "https://taisen.pages.dev";
   } catch (error) {
     errorMsg.textContent = error.message;
   }
@@ -70,7 +70,7 @@ verifyCodeBtn.addEventListener("click", async () => {
   const code = document.getElementById("otp-code").value;
   try {
     await confirmationResult.confirm(code);
-    window.location.href = "search.html";
+    window.location.href = "https://taisen.pages.dev";
   } catch (error) {
     errorMsg.textContent = error.message;
   }
