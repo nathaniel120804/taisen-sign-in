@@ -24,7 +24,7 @@ loginForm.addEventListener("submit", async (e) => {
 
   try {
     await signInWithEmailAndPassword(auth, email, password);
-    window.location.href = "https://taisen.pages.dev";
+    window.location.href = "https://taisenaccounts.pages.dev/account";
   } catch (error) {
     errorMsg.textContent = error.message;
   }
@@ -35,7 +35,7 @@ googleBtn.addEventListener("click", async () => {
   const provider = new GoogleAuthProvider();
   try {
     await signInWithPopup(auth, provider);
-    window.location.href = "https://taisen.pages.dev";
+    window.location.href = "https://taisenaccounts.pages.dev/account";
   } catch (error) {
     errorMsg.textContent = error.message;
   }
@@ -45,7 +45,7 @@ googleBtn.addEventListener("click", async () => {
 guestBtn.addEventListener("click", async () => {
   try {
     await signInAnonymously(auth);
-    window.location.href = "https://taisen.pages.dev";
+    window.location.href = "https://taisenaccounts.pages.dev/account";
   } catch (error) {
     errorMsg.textContent = error.message;
   }
